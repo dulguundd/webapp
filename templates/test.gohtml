@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* Set display to none for image*/
+        #image {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>
+    Test
+</h1>
+
+<a href="/home">Home</a>
+<a href="/about">About</a>
+<a href="/test">Test</a>
+<a href="/test1">Test page HTTP 2.0</a>
+
+<div>
+    <h1>GeeksforGeeks</h1>
+    <h3>Click on the button to see image</h3>
+
+    <!-- Add id to image -->
+    <img id="image" src=
+    "/stuff/row-1-column-1.jpg"/>
+</div>
+
+<button type="button"
+        onclick="show()" id="btnID">
+    Show image
+</button>
+
+<script>
+    function show() {
+
+        /* Access image by id and change
+        the display property to block*/
+        document.getElementById('image')
+            .style.display = "block";
+
+        document.getElementById('btnID')
+            .style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+
